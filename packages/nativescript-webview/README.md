@@ -1178,7 +1178,7 @@ zoomScale
 
 ---
 
-### `shouldStartLoadWithRequest`
+### `shouldStartLoad`
 
 Event that allows custom handling of any web view requests. Set `event.nativeEvent.shouldStart = true` from the function to continue loading the request and `false` to stop loading.
 
@@ -1186,7 +1186,7 @@ On Android, is not called on the first load.
 
 | Type     | Required | Platform            |
 | -------- | -------- | ------------------- |
-| function | No       | iOS, Android |
+| Event | No       | iOS, Android |
 
 The `event.nativeEvent` object includes these properties:
 

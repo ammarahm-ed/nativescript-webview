@@ -1,6 +1,6 @@
 {
   "name": "@ammarahmed/nativescript-webview",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "A NativeScript webview plugin that wraps the popular react-native-webview library using Open Native.",
   "main": "index",
   "typings": "index.ts",
