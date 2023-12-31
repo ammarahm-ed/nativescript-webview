@@ -1,7 +1,10 @@
 {
   "main": "./src/main.ts",
   "dependencies": {
-    "@nativescript/core": "file:../../node_modules/@nativescript/core"
+    "@nativescript/core": "file:../../node_modules/@nativescript/core",
+    "@ammarahmed/nativescript-webview": "file:../../dist/packages/nativescript-webview",
+    "@open-native/core": "2.0.0-alpha.22",
+    "react-native-webview": "13.6.3"
   },
   "devDependencies": {
     "@nativescript/android": "~8.6.0",

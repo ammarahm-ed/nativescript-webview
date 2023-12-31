@@ -55,12 +55,26 @@ module.exports = {
       },
     },
     '⚙️': {
-      script: `npx cowsay "@nativescript/* packages will keep your ⚙️ cranking"`,
-      description: '_____________  @nativescript/*  _____________',
+      script: `npx cowsay "@ammarahmed/* packages will keep your ⚙️ cranking"`,
+      description: '_____________  @ammarahmed/*  _____________',
     },
     // packages
     // build output is always in dist/packages
-    '@nativescript': {
+    '@ammarahmed': {
+      // @ammarahmed/webview
+      webview: {
+        build: {
+          script: 'nx run webview:build.all',
+          description: '@ammarahmed/webview: Build',
+        },
+      },
+      // @ammarahmed/nativescript-webview
+      'nativescript-webview': {
+        build: {
+          script: 'nx run nativescript-webview:build.all',
+          description: '@ammarahmed/nativescript-webview: Build',
+        },
+      },
       'build-all': {
         script: 'nx run-many --target=build.all --all',
         description: 'Build all packages',
@@ -71,8 +85,16 @@ module.exports = {
       description: '_____________  Focus (VS Code supported)  _____________',
     },
     focus: {
+      webview: {
+        script: 'nx run webview:focus',
+        description: 'Focus on @ammarahmed/webview',
+      },
+      'nativescript-webview': {
+        script: 'nx run nativescript-webview:focus',
+        description: 'Focus on @ammarahmed/nativescript-webview',
+      },
       reset: {
-        script: 'nx g @nativescript/plugin-tools:focus-packages',
+        script: 'nx g @ammarahmed/plugin-tools:focus-packages',
         description: 'Reset Focus',
       },
     },

@@ -20,7 +20,10 @@
       }
     ],
     "paths": {
-      "@demo/shared": ["tools/demo/index.ts"]
+      "@demo/shared": ["tools/demo/index.ts"],
+      "@ammarahmed/*": ["packages/*"],
+      "@ammarahmed/webview": ["packages/webview/index.d.ts"],
+      "@ammarahmed/nativescript-webview": ["packages/nativescript-webview/index.d.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
