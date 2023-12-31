@@ -7,7 +7,7 @@ import { DemoSharedNativescriptWebview } from '@demo/shared';
 })
 export class NativescriptWebviewComponent {
   demoShared: DemoSharedNativescriptWebview;
-  source: any = { uri: 'https://github.com' };
+  source: any = { uri: 'https://nativescript.org' };
   originWhitelist: string[] = ['*'];
 
   constructor(private _ngZone: NgZone) {}
