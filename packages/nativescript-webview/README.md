@@ -2,7 +2,7 @@
 
 A NativeScript webview plugin that wraps the popular [react-native-webview](https://github.com/react-native-webview/react-native-webview) library using [Open Native](https://github.com/OpenNative). Seemlessly integrate web content into your NativeScript applications using the robust and feature rich WebView library.
 
-<img src="https://github.com/ammarahm-ed/nativescript-plugins/blob/main/packages/nativescript-webview/screenshot.png" width="500" />
+<img src="https://github.com/ammarahm-ed/nativescript-plugins/blob/main/packages/nativescript-webview/screenshot.png" />
 
 ## Installation
 
