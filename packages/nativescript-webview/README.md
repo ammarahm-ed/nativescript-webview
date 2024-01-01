@@ -52,7 +52,7 @@ imports: [NativeScriptWebViewModule];
 ```ts
 import { registerElement } from 'nativescript-vue';
 
-registerElement("NSWebView", ()=> require("@nativescript/animated-circle").NSWebView)
+registerElement("NSWebView", ()=> require("@ammarahmed/nativescript-webview").NSWebView)
 ```
 2. Use the view in a `.vue` file.
 
