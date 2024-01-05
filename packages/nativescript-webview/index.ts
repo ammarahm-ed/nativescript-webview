@@ -271,4 +271,88 @@ export class WebView extends NativeScriptWebViewCommon {
   get src(): string {
     return (this.source as WebViewSourceUri).uri;
   }
+
+  goBack = () => {
+    if (__IOS__) {
+      this.commands.goBack(this._viewTag);
+    } else {
+      this.commands.goBack.call(this);
+    }
+  };
+
+  goForward = () => {
+    if (__IOS__) {
+      this.commands.goForward(this._viewTag);
+    } else {
+      this.commands.goForward.call(this);
+    }
+  };
+
+  reload = () => {
+    if (__IOS__) {
+      this.commands.reload(this._viewTag);
+    } else {
+      this.commands.reload.call(this);
+    }
+  };
+
+  stopLoading = () => {
+    if (__IOS__) {
+      this.commands.stopLoading(this._viewTag);
+    } else {
+      this.commands.stopLoading.call(this);
+    }
+  };
+
+  injectJavaScript = (script: string) => {
+    if (__IOS__) {
+      this.commands.injectJavaScript(this._viewTag, script);
+    } else {
+      this.commands.injectJavaScript.call(this, script);
+    }
+  };
+
+  requestFocus = () => {
+    if (__IOS__) {
+      this.commands.requestFocus(this._viewTag);
+    } else {
+      this.commands.requestFocus.call(this);
+    }
+  };
+
+  loadUrl = (url: string) => {
+    if (__IOS__) {
+    } else {
+      this.commands.loadUrl.call(this, url);
+    }
+  };
+
+  postMessage = (message: string) => {
+    if (__IOS__) {
+      this.commands.postMessage(this._viewTag, message);
+    } else {
+      this.commands.postMessage.call(this, message);
+    }
+  };
+
+  clearFormData = () => {
+    if (__IOS__) {
+    } else {
+      this.commands.clearFormData.call(this);
+    }
+  };
+
+  clearCache = (clear: boolean) => {
+    if (__IOS__) {
+    } else {
+      this.commands.clearCache.call(this, clear);
+    }
+  };
+
+  clearHistory = () => {
+    if (__IOS__) {
+    } else {
+      this.commands.clearHistory.call(this);
+    }
+  };
 }

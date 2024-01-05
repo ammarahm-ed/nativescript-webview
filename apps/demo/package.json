@@ -4,10 +4,10 @@
   "license": "SEE LICENSE IN <your-license-filename>",
   "repository": "<fill-your-repository-here>",
   "dependencies": {
+    "@ammarahmed/nativescript-webview": "file:../../packages/nativescript-webview",
     "@nativescript/core": "file:../../node_modules/@nativescript/core",
-    "@open-native/core": "2.0.0-alpha.22",
-    "react-native-webview": "13.6.3",
-    "@ammarahmed/nativescript-webview": "file:../../packages/nativescript-webview"
+    "@open-native/core": "^2.0.0-alpha.28",
+    "react-native-webview": "13.6.3"
   },
   "devDependencies": {
     "@nativescript/android": "~8.6.0",

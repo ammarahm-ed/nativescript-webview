@@ -32,7 +32,7 @@
     "@nativescript/types": "~8.6.0",
     "@nativescript/webpack": "~5.0.5",
     "@ngtools/webpack": "^15.0.0",
-    "@open-native/core": "2.0.0-alpha.22",
+    "@open-native/core": "2.0.0-alpha.28",
     "@types/react-native": "0.73.0",
     "husky": "^8.0.0",
     "nativescript-vue": "~2.9.0",

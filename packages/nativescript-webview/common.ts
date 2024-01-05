@@ -1,5 +1,4 @@
-import { View } from '@nativescript/core';
-import { requireNativeComponent } from '@open-native/core';
+import { OpenNativeBaseView, requireNativeComponent } from '@open-native/core';
 import { ViewProps } from 'react-native';
 import { WebViewProps } from 'react-native-webview';
 
@@ -64,9 +63,4 @@ type WebViewCommands = {
   clearHistory?: () => void;
 };
 
-interface NativeScriptWebViewBaseInterface {
-  prototype: View & WebViewProperties & WebViewCommands;
-  new (): View & WebViewProperties & WebViewCommands;
-}
-
-export const NativeScriptWebViewCommon = requireNativeComponent('RNCWebView') as NativeScriptWebViewBaseInterface;
+export const NativeScriptWebViewCommon = requireNativeComponent('RNCWebView') as OpenNativeBaseView<WebViewProperties, WebViewCommands>;
