@@ -1,6 +1,6 @@
 {
   "name": "@ammarahmed/nativescript-webview",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "A NativeScript webview plugin that wraps the popular react-native-webview library using Open Native.",
   "main": "index",
   "typings": "index.ts",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ammarahm-ed/nativescript-plugins.git"
+    "url": "https://github.com/ammarahm-ed/nativescript-webview.git"
   },
   "keywords": [
     "NativeScript",
@@ -29,10 +29,10 @@
     "email": "ammarahmed6506@protonmail.com"
   },
   "bugs": {
-    "url": "https://github.com/ammarahm-ed/nativescript-plugins/issues"
+    "url": "https://github.com/ammarahm-ed/nativescript-webview/issues"
   },
   "license": "Apache-2.0",
-  "homepage": "https://github.com/ammarahm-ed/nativescript-plugins",
+  "homepage": "https://github.com/ammarahm-ed/nativescript-webview",
   "readmeFilename": "README.md",
   "bootstrapper": "@nativescript/plugin-seed",
   "peerDependencies": {
